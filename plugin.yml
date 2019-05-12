@@ -1,0 +1,23 @@
+name: BambooManager
+main: xyz.bambooisland.manager.BambooManager
+version: 1.2.4.1
+api-version: 1.13
+author: Exzh_PMGI
+commands:
+  point:
+    description: BambooPlayerLocator
+    usage: §e/point [玩家ID] 获得与玩家的距离
+    permission: BambooManager.Player
+    permission-message: §4您的权限不足以执行此条命令
+  bamboo:
+    description: BambooManagerTools
+    usage: §e/bamboo <remove|serverinfo>
+    permission: BambooManager.Administrator
+    permission-message: §4您的权限不足以执行此条命令
+permissions:
+  BambooManager.Player:
+     description: 普通玩家
+     default: true
+  BambooManager.Administrator:
+     description: 管理员
+     default: op
